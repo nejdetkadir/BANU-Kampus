@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="@string/menu_newStudent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical" android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/new_student_imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/new_student_titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Title"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/new_student_contentTextView"
+            android:layout_width="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eu sem integer vitae justo eget magna fermentum iaculis. Tortor at risus viverra adipiscing at in tellus integer feugiat. Posuere morbi leo urna molestie at elementum eu. Imperdiet proin fermentum leo vel orci porta. Aliquet enim tortor at auctor urna nunc id. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Ante in nibh mauris cursus mattis molestie. Amet facilisis magna etiam tempor orci eu lobortis. Faucibus ornare suspendisse sed nisi lacus sed. Non diam phasellus vestibulum lorem sed risus ultricies tristique. Nascetur ridiculus mus mauris vitae ultricies leo integer. Libero nunc consequat interdum varius. Etiam tempor orci eu lobortis. Nunc faucibus a pellentesque sit amet porttitor eget. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Ultrices neque ornare aenean euismod elementum nisi quis.
+\n\n
+Arcu non odio euismod lacinia at quis risus sed. Quis commodo odio aenean sed adipiscing diam donec. Enim nulla aliquet porttitor lacus. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Felis donec et odio pellentesque diam volutpat. Ac feugiat sed lectus vestibulum. Diam donec adipiscing tristique risus. In ante metus dictum at tempor commodo ullamcorper a lacus. Pharetra sit amet aliquam id diam maecenas ultricies mi eget.
+\n\n
+Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Risus ultricies tristique nulla aliquet. Et malesuada fames ac turpis egestas sed tempus urna et. In dictum non consectetur a erat. Sagittis id consectetur purus ut faucibus pulvinar. Odio tempor orci dapibus ultrices in. Sit amet risus nullam eget felis eget. Elit duis tristique sollicitudin nibh sit amet commodo nulla. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Amet justo donec enim diam vulputate ut pharetra sit. Et odio pellentesque diam volutpat commodo sed egestas egestas. Condimentum mattis pellentesque id nibh tortor id. Amet consectetur adipiscing elit ut. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Semper auctor neque vitae tempus quam pellentesque nec nam. Vitae elementum curabitur vitae nunc sed velit dignissim. Feugiat sed lectus vestibulum mattis ullamcorper velit sed.
+\n\n
+Neque vitae tempus quam pellentesque nec. Etiam non quam lacus suspendisse faucibus interdum. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Amet risus nullam eget felis eget nunc lobortis mattis aliquam. Ipsum a arcu cursus vitae. Ultrices tincidunt arcu non sodales. Nisi lacus sed viverra tellus in. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In ornare quam viverra orci. Lacus luctus accumsan tortor posuere ac ut. Adipiscing elit ut aliquam purus sit. At augue eget arcu dictum varius duis at consectetur. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Vel turpis nunc eget lorem. Donec pretium vulputate sapien nec. Tempor nec feugiat nisl pretium. Neque viverra justo nec ultrices dui sapien eget mi. Mattis rhoncus urna neque viverra justo nec ultrices dui.
+\n\n
+Facilisis gravida neque convallis a cras. Tellus molestie nunc non blandit massa enim. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Nisi quis eleifend quam adipiscing. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Dui sapien eget mi proin sed libero enim sed faucibus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Dolor magna eget est lorem ipsum. Purus non enim praesent elementum facilisis. Amet consectetur adipiscing elit duis tristique. Nunc sed id semper risus in hendrerit gravida."
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>
