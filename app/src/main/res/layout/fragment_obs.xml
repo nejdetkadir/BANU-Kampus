@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.obs.OBSFragment">
 
-
     <WebView
         android:id="@+id/obs_webviewObs"
         android:layout_width="0dp"
@@ -18,5 +17,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/obs_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/obs_webviewObs"
+        app:layout_constraintStart_toStartOf="@+id/obs_webviewObs"
+        app:layout_constraintTop_toTopOf="@+id/obs_webviewObs" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
