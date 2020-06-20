@@ -6,15 +6,51 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_obs"
+            android:icon="@drawable/ic_obs"
+            android:title="@string/menu_obs" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_notices"
+            android:icon="@drawable/ic_notices"
+            android:title="@string/menu_notices" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/menu_news" />
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_activities"
+            android:title="@string/menu_activities" />
+        <item
+            android:id="@+id/nav_communities"
+            android:icon="@drawable/ic_communities"
+            android:title="@string/menu_communities" />
+        <item
+            android:id="@+id/nav_academicCalendar"
+            android:icon="@drawable/ic_academic_calendar"
+            android:title="@string/menu_academicCalendar" />
+        <item
+            android:id="@+id/nav_billOfFare"
+            android:icon="@drawable/ic_billoffare"
+            android:title="@string/menu_billOfFare" />
+        <item
+            android:id="@+id/nav_new_student"
+            android:icon="@drawable/ic_new_student"
+            android:title="@string/menu_newStudent" />
+        <item
+            android:id="@+id/nav_bus_times"
+            android:icon="@drawable/ic_bus_times"
+            android:title="@string/menu_busTimes" />
+        <item
+            android:id="@+id/nav_wantOrComplaint"
+            android:icon="@drawable/ic_want_or_complaint"
+            android:title="@string/menu_wantOrComplaint" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/menu_contact" />
     </group>
 </menu>

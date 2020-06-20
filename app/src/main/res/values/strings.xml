@@ -8,6 +8,15 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Anasayfa</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_obs">OBS</string>
+    <string name="menu_notices">Duyurular</string>
+    <string name="menu_news">Haberler</string>
+    <string name="menu_activities">Etkinlikler</string>
+    <string name="menu_communities">Topluluklar</string>
+    <string name="menu_academicCalendar">Akademik Takvim</string>
+    <string name="menu_billOfFare">Yemek Listesi</string>
+    <string name="menu_newStudent">Yeni Öğrenci</string>
+    <string name="menu_busTimes">Otobüs Saatleri</string>
+    <string name="menu_wantOrComplaint">İstek / Şikayet</string>
+    <string name="menu_contact">İletişim</string>
 </resources>

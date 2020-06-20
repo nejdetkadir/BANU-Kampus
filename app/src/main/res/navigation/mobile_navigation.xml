@@ -12,14 +12,68 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.nejdetkadirr.banucampus.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_obs"
+        android:name="com.nejdetkadirr.banucampus.ui.obs.OBSFragment"
+        android:label="@string/menu_obs"
+        tools:layout="@layout/fragment_obs" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.nejdetkadirr.banucampus.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_notices"
+        android:name="com.nejdetkadirr.banucampus.ui.notices.NoticesFragment"
+        android:label="@string/menu_notices"
+        tools:layout="@layout/fragment_notices" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.nejdetkadirr.banucampus.ui.news.NewsFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_activities"
+        android:name="com.nejdetkadirr.banucampus.ui.activities.ActivitiesFragment"
+        android:label="@string/menu_activities"
+        tools:layout="@layout/fragment_activities" />
+
+    <fragment
+        android:id="@+id/nav_communities"
+        android:name="com.nejdetkadirr.banucampus.ui.communities.CommunitiesFragment"
+        android:label="@string/menu_communities"
+        tools:layout="@layout/fragment_communities" />
+
+    <fragment
+        android:id="@+id/nav_academicCalendar"
+        android:name="com.nejdetkadirr.banucampus.ui.academiccalendar.AcademicCalendarFragment"
+        android:label="@string/menu_academicCalendar"
+        tools:layout="@layout/fragment_academic_calendar" />
+
+    <fragment
+        android:id="@+id/nav_billOfFare"
+        android:name="com.nejdetkadirr.banucampus.ui.billoffare.BillOfFareFragment"
+        android:label="@string/menu_billOfFare"
+        tools:layout="@layout/fragment_billoffare" />
+
+    <fragment
+        android:id="@+id/nav_new_student"
+        android:name="com.nejdetkadirr.banucampus.ui.newstudent.NewStudentFragment"
+        android:label="@string/menu_newStudent"
+        tools:layout="@layout/fragment_new_student" />
+
+    <fragment
+        android:id="@+id/nav_bus_times"
+        android:name="com.nejdetkadirr.banucampus.ui.bustimes.BusTimesFragment"
+        android:label="@string/menu_busTimes"
+        tools:layout="@layout/fragment_bus_times" />
+
+    <fragment
+        android:id="@+id/nav_wantOrComplaint"
+        android:name="com.nejdetkadirr.banucampus.ui.wantorcomplaint.WantOrComplaintFragment"
+        android:label="@string/menu_wantOrComplaint"
+        tools:layout="@layout/fragment_want_or_complaint" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.nejdetkadirr.banucampus.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>
