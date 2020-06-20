@@ -1,27 +1,25 @@
 package com.nejdetkadirr.banucampus.ui.notices;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import com.nejdetkadirr.banucampus.R;
-import com.nejdetkadirr.banucampus.WebViewActivity;
-
-import java.util.ArrayList;
 
 public class GeneralNoticesFragment extends Fragment {
-    ArrayList<String> notices = new ArrayList<>();
-    ArrayList<String> noticeURLs = new ArrayList<>();
+    private WebView notices_webView;
+    private ProgressBar notices_progressbar;
+
     public static GeneralNoticesFragment newInstance() {
         return new GeneralNoticesFragment();
     }
@@ -30,25 +28,29 @@ public class GeneralNoticesFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_general_notices, container, false);
-        ListView listView = rootView.findViewById(R.id.notices_generalNoticesListView);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        notices_webView = rootView.findViewById(R.id.notices_webView);
+        notices_progressbar = rootView.findViewById(R.id.notices_progressBar);
+        notices_progressbar.setVisibility(View.VISIBLE);
+        WebSettings webSettings= notices_webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        notices_webView.loadUrl("https://www.bandirma.edu.tr/tr/www/Duyuru/Liste?k=-1");
+        notices_webView.setWebViewClient(new WebViewClient() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (noticeURLs.get(position).matches("empty")) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Verilere Ulaşılamadı!",Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent intent = new Intent(getActivity(), WebViewActivity.class);
-                    intent.putExtra("URL", noticeURLs.get(position));
-                    getActivity().startActivity(intent);
-                }
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                notices_progressbar.setVisibility(View.INVISIBLE);
             }
         });
-        ArrayAdapter arrayAdapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,notices);
-        listView.setAdapter(arrayAdapter);
+        notices_webView.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == MotionEvent.ACTION_UP && notices_webView.canGoBack()) {
+                    notices_webView.goBack();
+                    return true;
+                }
+                return false;
+            }
+        });
         return rootView;
-    }
-
-    public void getData() {
-
     }
 }
